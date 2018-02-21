@@ -17,7 +17,7 @@ var integrationPassword = '<%= integrations_password %> ';
 var baseAuthUrl = 'https://api.cloudmine.io/v2/auth/developer/login';
 var integrationCredentials = {username: integrationUsername, password: integrationPassword}
 var authToken = ''; 
-var baseIntegrationUrl = 'https://api.cloudmine.io/v2/integrations/<%= integrations_id %>/query';
+var baseIntegrationUrl = 'https://api.cloudmine.io/v2/integrations/<%= integration_id %>/query';
 
 /*var data = {};
 data.params = {

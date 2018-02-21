@@ -1,6 +1,6 @@
 var cm = require("cloudmine");
 var rest = require("restler");
-var _= require('lodash'); 
+var _= require('lodash');
 
 
 /*-------------------------------------------------------------------------------------------------Begin Local Config 
@@ -211,7 +211,6 @@ function sendPtUpdate(updateBody, authHeaders){
 function getIntegrationsAuthHeaders(){
   rest.postJson(baseAuthUrl, integrationCredentials)
     .on('success', function(authResponseData, response){
-        //console.log(authResponseData.data.token);
         authToken = authResponseData.data.token;
     	var authHeader = 'Bearer ' + authToken;
         var authHeaders = {"Authorization": authHeader};
@@ -225,11 +224,10 @@ function getIntegrationsAuthHeaders(){
 
 function getPtUpdateBody(){
     var ptUpdateBody = basePtUpdateModel;
-  
-     console.log('params key values: ' + JSON.stringify(data.params[ptProfileKey]));
-  console.log('before lodash: ' + JSON.stringify(ptUpdateBody));
+    console.log('params key values: ' + JSON.stringify(data.params[ptProfileKey]));
+  	console.log('before lodash: ' + JSON.stringify(ptUpdateBody));
     _.set(ptUpdateBody, "Patient.Demographics", data.params[ptProfileKey]);
-  console.log('after lodash: ' + JSON.stringify(ptUpdateBody)); 
+  	console.log('after lodash: ' + JSON.stringify(ptUpdateBody)); 
     return ptUpdateBody; 
 }
 
