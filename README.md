@@ -30,13 +30,13 @@ Line 30: should be tester's email.
 ### `CloudMine-Redox-Demo-Environment.postman_environment_json`
 The Postman environment file serves as a template, indicating which of KV pairs which are required for the Postman collection to execute successfully. The following items need to be present, otherwise the Postman collection might fail to run. 
 
-`appid`: required, available from the CloudMine CHC dashboard. 
-`apikey`: required, available from the CloudMine CHC dashboard.
-`ptname`: required. 
-`ptsex`: required.
-`ptfirstname`: required.
-`ptlastname`: required.
-`ptdob`: required. 
+- `appid`: required, available from the CloudMine CHC dashboard. 
+- `apikey`: required, available from the CloudMine CHC dashboard.
+- `ptname`: required. 
+- `ptsex`: required.
+- `ptfirstname`: required.
+- `ptlastname`: required.
+- `ptdob`: required. 
 
 Note: Timothy Bixby is a standard user within Redox's test tools environment. Changing the `ptname`, `ptdob`, `ptsex`, `ptfirstname`, or `ptlastname` to a patient other than those listed in Redox's dev tools could cause the demo to fail as no users will be found in the EHR environment. Other patients within Redox's development tools include: 
 
@@ -53,29 +53,29 @@ Please ensure the above KV pairs exist in your environment file, and for an end-
 This snippet manages the communication between your CloudMine application in Logic Engine (or JS Snippets), and the CloudMine integration engine.
 
 #### Replacements
-Line 6: your application's `appid`, available within the CHC dashboard. 
-Line 7: your application's `master api key`, available within the CHC dashboard.
-Line 11: your application's `appid`, available within the CHC dashboard. 
-Line 12: your application's `api key`, available within the CHC dashboard.
-Line 15: the CloudMine organization developer username.
-Line 16: the CloudMine organixation developer password. 
-Line 20: the CloudMine `integration_id` representing the Redox Source.
+- Line 6: your application's `appid`, available within the CHC dashboard. 
+- Line 7: your application's `master api key`, available within the CHC dashboard.
+- Line 11: your application's `appid`, available within the CHC dashboard. 
+- Line 12: your application's `api key`, available within the CHC dashboard.
+- Line 15: the CloudMine organization developer username.
+- Line 16: the CloudMine organixation developer password. 
+- Line 20: the CloudMine `integration_id` representing the Redox Source.
 
 ### `redoxSendPtProfileUpdate.js`
 
 This snippet takes an updated phone number for the patient, sends it to the Integrations service for dispatch to the EHR, and upon successful respose from the Integrations API, updates the patient-level profile data ith the new phone number. 
 
 #### Replacements
-Line 21: your application's `appid`, available within the CHC dashboard. 
-Line 22: your application's `master api key`, available within the CHC dashboard.
-Line 27: the CloudMine organization developer username.
-Line 28: the CloudMine organixation developer password. 
-Line 32: the CloudMine `integration_id` representing the Redox Source.
+- Line 21: your application's `appid`, available within the CHC dashboard. 
+- Line 22: your application's `master api key`, available within the CHC dashboard.
+- Line 27: the CloudMine organization developer username.
+- Line 28: the CloudMine organixation developer password. 
+- Line 32: the CloudMine `integration_id` representing the Redox Source.
 
 ### `redoxReceiveData.js`
 
 #### Replacements
-Line 4: your application's `appid`, available within the CHC dashboard. 
-Line 5: your application's `api key`, available within the CHC dashboard.
-Line 9: your application's `appid`, available within the CHC dashboard. 
-Line 10: your application's `master api key`, available within the CHC dashboard.
+- Line 4: your application's `appid`, available within the CHC dashboard. 
+- Line 5: your application's `api key`, available within the CHC dashboard.
+- Line 9: your application's `appid`, available within the CHC dashboard. 
+- Line 10: your application's `master api key`, available within the CHC dashboard.
