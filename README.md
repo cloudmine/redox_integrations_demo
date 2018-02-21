@@ -78,6 +78,8 @@ This snippet takes an updated phone number for the patient, sends it to the Inte
 
 ### `redoxReceiveData.js`
 
+This snippet is responsible for receiving a webhook from the CloudMine Redox connector for inbound data. Within this demo flow, we will receive an asynchronous `POST` to this endpoint as a response to our `PatientSearch` query within `queryEHR.js`.
+
 #### Replacements
 - Line 4: your application's `appid`, available within the CHC dashboard. 
 - Line 5: your application's `api key`, available within the CHC dashboard.
