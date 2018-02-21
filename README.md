@@ -40,9 +40,9 @@ The Postman environment file serves as a template, indicating which of KV pairs 
 
 Note: Timothy Bixby is a standard user within Redox's test tools environment. Changing the `ptname`, `ptdob`, `ptsex`, `ptfirstname`, or `ptlastname` to a patient other than those listed in Redox's dev tools could cause the demo to fail as no users will be found in the EHR environment. Other patients within Redox's development tools include: 
 
--) Barbara Bixby
--) Walter Carthwright
--) Elizabeth Carthwright 
+ -) Barbara Bixby
+ -) Walter Carthwright
+ -) Elizabeth Carthwright 
 
 #### Replacements
 
