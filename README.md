@@ -31,7 +31,7 @@ In order to prepare the environment, you will need to add some configuration to 
 #### Replacements
 Line 30: should be tester's email. 
 
-### `CloudMine-Redox-Demo-Environment.postman_environment_json`
+### `CloudMine-Redox-Demo-Environment.postman_environment.json`
 The Postman environment file serves as a template, indicating which of KV pairs which are required for the Postman collection to execute successfully. The following items need to be present, otherwise the Postman collection might fail to run. 
 
 - `appid`: required, available from the CloudMine CHC dashboard. 
