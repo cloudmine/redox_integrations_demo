@@ -24,7 +24,9 @@ The Postman collection itself allows customers to demo a prepackaged use case th
 6) Verifies the updated data locally on CloudMine to ensure it has been saved as part of the patient-level data store. 
 7) Asynchronously receives a CCD-style patient update (as a response to the query), and merges this data with the existing patient record. 
 
-In order to prepare the environment, you will need to add some configuration to the various Snippets and Postman collections so that it matches your environment. 
+Note: Redox's testing EHR environment is connected to a static database, meaning that while successful patient updates will return a 200 with successful status indicators, the data itself will not be updated. In a production scenario, these values would be updated as expected. 
+
+In order to prepare the environment, you will need to add some configuration to the various Snippets and Postman collections so that it matches your environment. These configuration elements are detailed below. 
 
 #### Replacements
 Line 30: should be tester's email. 
