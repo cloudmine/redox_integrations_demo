@@ -6,10 +6,12 @@ This demo is comprised of multiple components, incorporating tools such as Postm
 
 ### Redox Source and Destination
 
--- need a source
--- need a destination
--- configure  the source
--- configure the destination 
+CloudMine's Redox integration documentation is available [here](https://cloudmine.io/docs/#/rest_api#redox). Before moving forward, you will need the following identifiers:
+
+1) CloudMine Redox Source `integration_id`
+2) CloudMine Redox Destination `integration_id`
+
+You will need to configure these elements either via the API or CHC dashboard after obtaining valid Redox credentials. 
 
 ### `CloudMine-Redox-Postman-Collection.json`
 The Postman collection itself allows customers to demo a prepackaged use case that achieves the following:
