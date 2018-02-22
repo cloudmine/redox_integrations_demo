@@ -1,5 +1,5 @@
 # CloudMine Redox Demo
-This repo houses a Postman collection and Javascript snippets which form a Redox demo.
+This repo houses a Postman collection and Javascript snippets which form a Redox Integrations demo. This code package is provided as a started package and is intended to be used for educational and demonstrative purposes only. We recommend that this package is not used in any production or live user/patient scenarios. 
 
 ## Getting Started
 This demo is comprised of multiple components, incorporating tools such as Postman and the CloudMine Logic Engine API. Postman allows us to mock out a standard client flow, and the JS Snippets/Logic Engine package enable communication between CloudMine's Redox Connector and your client application.
